@@ -8,9 +8,9 @@ export default function TimeNow() {
       const now = new Date();
       const hours = now.getHours();
       const minutes = now.getMinutes();
-      const seconds = now.getSeconds();
-      setTime(`${hours}:${minutes}:${seconds}`);
-    }, 1000);
+      // const seconds = now.getSeconds();
+      setTime(`${hours}:${minutes}`);
+    }, 60000);
 
     return () => clearInterval(interval);
   }, []);
