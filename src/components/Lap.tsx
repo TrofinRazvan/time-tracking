@@ -26,6 +26,7 @@
 
 
 import React, { useState } from "react";
+import Start from "./Start";
 import Stop from "./Stop";
 
 export default function Lap() {
